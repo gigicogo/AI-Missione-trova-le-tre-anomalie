@@ -4,6 +4,8 @@ Una web app interattiva e autonoma per riconoscere tre categorie di rischio nell
 
 L'applicazione mette l'utente nei panni di chi deve esaminare informazioni, prendere decisioni motivate e distinguere i rischi da un normale flusso di lavoro. Non è necessario utilizzare un modello di IA reale.
 
+
+
 ## Che cosa contiene
 
 Tre missioni progressive, con dati, pratiche e documenti interamente fittizi:
@@ -23,16 +25,6 @@ Ogni missione comprende un fascicolo consultabile, attività interattive, una mo
 3. Seleziona **Inizia l'indagine** e completa le tre missioni.
 
 Non serve installare nulla, creare un account o collegarsi a un servizio esterno. L'app funziona anche senza connessione Internet.
-
-## Pubblicazione con GitHub Pages
-
-1. Crea un repository pubblico, per esempio `missione-tre-anomalie`.
-2. Carica nella radice del repository i file `index.html` e `README.MD`.
-3. In **Settings → Pages**, scegli **Deploy from a branch**.
-4. Seleziona il ramo `main` e la cartella **/(root)**, quindi salva.
-5. Una volta pubblicato, il sito sarà disponibile a un indirizzo simile a `https://<utente>.github.io/missione-tre-anomalie/`.
-
-L'indirizzo è un esempio: sostituisci `<utente>` con il nome dell'account o dell'organizzazione GitHub.
 
 ## Funzionalità
 
@@ -78,6 +70,17 @@ missione-tre-anomalie/
 
 Nessun processo di build è necessario.
 
-## Licenza
+📄 Licenza
 
-Questo repository non include automaticamente una licenza d'uso del codice. Chi pubblica o distribuisce una propria copia può scegliere e aggiungere il file `LICENSE` più adatto ai diritti che intende concedere.
+Da definire: si suggerisce una licenza aperta (es. MIT o CC BY 4.0) per favorire il riuso da parte di altri formatori o altri enti. Sostituisci questo paragrafo con il testo della licenza scelta e il file LICENSE del repo.
+
+👤 Autore e contesto
+
+Gianluigi Cogo Content creator e technical writer interessato ad AI generativa, automazioni, viaggi e strumenti digitali. Consulente e docente sui temi dell'IA generativa nella Pubblica Amministrazione.
+
+L'app nasce come esercitazione nel percorso operativo "L'IA nella Pubblica Amministrazione — Percorso operativo per l'uso consapevole, sicuro e governato dell'IA generativa" (20 ore: percorso base per funzionari ed esecutori + modulo governance per direttori e dirigenti). Per info sul corso contattatemi usando i social qui sotto.
+
+📮 Newsletter: gigicogo.substack.com
+📝 Blog: medium.com/webeconoscenza
+▶️ YouTube: youtube.com/@gigicogo
+💼 LinkedIn: linkedin.com/in/gigicogo
