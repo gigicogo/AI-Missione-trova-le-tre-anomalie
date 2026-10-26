@@ -4,7 +4,7 @@ Una web app interattiva e autonoma per riconoscere tre categorie di rischio nell
 
 L'applicazione mette l'utente nei panni di chi deve esaminare informazioni, prendere decisioni motivate e distinguere i rischi da un normale flusso di lavoro. Non è necessario utilizzare un modello di IA reale.
 
-text
+
 ![Screenshot dell'app](images/landing.jpg)
 
 Demo web su Github Pages:https://gigicogo.github.io/AI-Missione-trova-le-tre-anomalie/
