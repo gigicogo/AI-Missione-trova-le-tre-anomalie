@@ -1,92 +1,147 @@
-# Missione: trova le tre anomalie
+# ⚙️ Esercitazione A — Simulatore di automazione
 
-Una web app interattiva e autonoma per riconoscere tre categorie di rischio nell'impiego dell'intelligenza artificiale in contesti amministrativi: **bias**, **prompt injection** e **data leakage**.
+**Simulatore di automazione** è una mini web app didattica che mostra come funziona una sequenza automatizzata: un **evento** fa partire il processo, una **condizione** già programmata viene valutata, viene eseguita un’**azione** prevista e il flusso arriva all’**arresto**.
 
-L'applicazione mette l'utente nei panni di chi deve esaminare informazioni, prendere decisioni motivate e distinguere i rischi da un normale flusso di lavoro. Non è necessario utilizzare un modello di IA reale.
+L’esercitazione è pensata per il **Modulo B** del percorso sull’IA nella Pubblica Amministrazione e aiuta i partecipanti non tecnici a capire la differenza tra un’automazione basata su regole e un sistema di IA generativa.
 
+## 🎯 A chi è rivolto
 
-![Screenshot dell'app](images/landing.jpg)
+L’esercitazione è pensata per:
 
-Demo web su Github Pages:https://gigicogo.github.io/AI-Missione-trova-le-tre-anomalie/
+- funzionari ed esecutori della Pubblica Amministrazione;
+- personale non tecnico che inizia a esplorare automazioni e IA;
+- responsabili di uffici che devono valutare processi ripetitivi;
+- formatori e docenti che vogliono spiegare in modo semplice evento, condizione, azione e arresto;
+- partecipanti ai percorsi di upskilling sull’IA nella PA.
 
-## Che cosa contiene
+## 🧠 Obiettivo formativo
 
-Tre missioni progressive, con dati, pratiche e documenti interamente fittizi:
+L’app mostra che un’automazione:
 
-1. **La graduatoria sospetta — Bias.** Confronto tra criteri approvati e criteri introdotti impropriamente da una proposta automatizzata; ricostruzione di una graduatoria e scelta degli interventi opportuni.
-2. **Il bando manipolato — Prompt injection.** Individuazione di istruzioni non attendibili in una pagina da riassumere; verifica delle affermazioni generate e delle misure da adottare.
-3. **La fuga invisibile — Data leakage.** Analisi di un registro eventi e di una scheda dei permessi per identificare esposizioni in ingresso, nel recupero delle informazioni e in uscita.
+1. parte quando si verifica un **evento**;
+2. valuta una **condizione** già programmata;
+3. svolge un’**azione** già prevista;
+4. raggiunge l’**arresto**, senza decidere autonomamente nuovi compiti.
 
-Ogni missione comprende un fascicolo consultabile, attività interattive, una motivazione scritta e un **debrief commentato** sbloccato solo dopo la consegna. Al termine è possibile visualizzare il riepilogo e scaricare un rapporto di testo sul proprio dispositivo.
+Il messaggio centrale è semplice:
 
-**Durata indicativa:** 20–25 minuti, variabile a seconda dell'esperienza e del grado di approfondimento. Non esiste una scadenza automatica.
+> Un’automazione esegue istruzioni già definite. Può seguire percorsi diversi in base ai dati, ma non inventa da sola nuove regole.
 
-## Provala subito
+## 🕹️ Come funziona
 
-1. Scarica `index.html`.
-2. Aprilo con un browser recente (Chrome, Edge, Firefox o Safari).
-3. Seleziona **Inizia l'indagine** e completa le tre missioni.
+La durata indicativa è di **3–5 minuti**.
 
-Non serve installare nulla, creare un account o collegarsi a un servizio esterno. L'app funziona anche senza connessione Internet.
+1. Apri `index.html` nel browser.
+2. Scegli uno dei due scenari disponibili.
+3. Modifica soltanto il dato di ingresso.
+4. Premi **Avvia simulazione**.
+5. Osserva i quattro passaggi: evento, condizione, azione e arresto.
+6. Cambia il dato e ripeti la simulazione.
+7. Confronta i risultati: è cambiata la regola oppure soltanto il dato?
 
-## Funzionalità
+### Risposta attesa
 
-- HTML, CSS e JavaScript raccolti in **un unico file**.
-- Nessuna dipendenza da librerie, API o CDN.
-- Interfaccia adattiva per desktop, tablet e smartphone.
-- Navigazione progressiva e spiegazioni disponibili dopo la consegna.
-- Contatore del tempo trascorso, senza penalizzazioni per la lentezza.
-- Salvataggio del progresso nel `localStorage` del browser, quando disponibile.
-- Pulsante **Ricomincia** per cancellare le risposte locali.
-- Esportazione di un rapporto `.txt` e stampa del riepilogo.
-- Comandi accessibili da tastiera, con etichette e stati espliciti.
+Cambia soltanto il **dato in ingresso**. La regola predefinita seleziona un ramo diverso, ma non inventa nuovi passaggi né assume decisioni autonome.
 
-## Dati e privacy
+## 🧩 I due scenari
 
-L'applicazione è **statica**: non prevede server applicativi, autenticazione, tracker, invio di risposte o chiamate verso servizi esterni. Le scelte e le note vengono salvate esclusivamente nel browser dell'utente mediante `localStorage`, quando disponibile. Se il browser blocca questa funzione, l'app resta comunque utilizzabile per la sessione aperta.
+| Scenario | Evento | Condizione | Azione possibile |
+|---|---|---|---|
+| **Segnalazione ricevuta** | Arriva un modulo di segnalazione simulato | I campi necessari sono completi? | Notifica per l’operatore oppure richiesta di integrazione |
+| **Scadenze dell’ufficio** | È giovedì alle 9:00, orario simulato | Ci sono attività in scadenza nei prossimi 7 giorni? | Preparazione di un elenco oppure nessun avviso |
 
-Le note eventualmente inserite vengono aggiunte solo al file di rapporto scaricato dall'utente. È preferibile non inserire nomi, documenti o informazioni reali nelle note.
+In entrambi i casi, le azioni sono **solo rappresentate a schermo**: nessuna email viene inviata e nessun dato reale viene modificato.
 
-Come per qualsiasi sito ospitato da terzi, il servizio di hosting (ad esempio GitHub Pages) può gestire i normali log tecnici delle richieste HTTP; questo non comporta l'invio delle risposte dell'applicazione.
+## 💻 Come usare l’app
 
-## Personalizzazione
+L’app è una **web app statica autonoma**, contenuta in un unico file `index.html`.
 
-Apri `index.html` con un editor di testo.
+- Non richiede account, registrazione o installazione.
+- Non utilizza modelli AI, agenti o skill.
+- Non invia email, notifiche o richieste di rete.
+- Non modifica gestionali o sistemi dell’ente.
+- Non salva dati personali.
+- Funziona anche offline.
 
-- I testi, i casi e le soluzioni sono definiti nello script nell'oggetto `taskData` e nelle funzioni `sourceBias`, `sourceInjection`, `sourceLeakage`.
-- Colori e impaginazione si modificano nella sezione `<style>` attraverso le variabili CSS `:root`.
-- Titolo, descrizione e indicazioni di durata possono essere aggiornati direttamente nel markup e nelle funzioni di rendering.
+### Avvio locale
 
-Se modifichi i casi, aggiorna **anche le risposte attese e le spiegazioni** utilizzate per il feedback. Per la graduatoria della prima missione, controlla che i punteggi della griglia producano esattamente l'ordine atteso.
+1. Scarica o clona il repository.
+2. Apri `index.html` con un browser moderno.
+3. Scegli lo scenario e avvia la simulazione.
 
-## Uso responsabile e limiti
+### Clonare il repository
 
-Tutti gli scenari sono inventati e servono esclusivamente a sviluppare capacità di analisi. I punteggi hanno valore didattico: non sono una certificazione di competenza, un audit di sicurezza o un giudizio su persone reali. I comportamenti simulati non sostituiscono procedure, autorizzazioni, indicazioni dei referenti competenti o valutazioni giuridiche.
-
-## Struttura del progetto
-
-```text
-missione-tre-anomalie/
-├── index.html
-└── README.MD
+```bash
+git clone [https://github.com/gigicogo/AI-Simulatore-di-automazione.git](https://github.com/gigicogo/AI-Simulatore-di-automazione.git)
+cd AI-Simulatore-di-automazione
 ```
 
-Nessun processo di build è necessario.
+## 🧪 Prova per l’aula
 
-📄 Licenza
+La prova guidata dura circa **3 minuti**:
 
-Da definire: si suggerisce una licenza aperta (es. MIT o CC BY 4.0) per favorire il riuso da parte di altri formatori o altri enti. Sostituisci questo paragrafo con il testo della licenza scelta e il file LICENSE del repo.
+1. Avvia la simulazione con il primo dato.
+2. Cambia il dato, ad esempio da “Sì, è completa” a “No, è incompleta”.
+3. Ripeti la simulazione.
+4. Confronta i due percorsi.
+5. Chiedi al gruppo: **“È cambiata la regola, oppure soltanto il dato in ingresso?”**
 
-👤 Autore e contesto
+Questa attività è utile per introdurre la differenza tra:
 
-Gianluigi Cogo Content creator e technical writer interessato ad AI generativa, automazioni, viaggi e strumenti digitali. Consulente e docente sui temi dell'IA generativa nella Pubblica Amministrazione.
+- un’automazione basata su regole fisse;
+- un assistente AI generativo;
+- un agente che potrebbe pianificare o eseguire più azioni.
 
-L'app nasce come esercitazione nel percorso operativo "L'IA nella Pubblica Amministrazione — Percorso operativo per l'uso consapevole, sicuro e governato dell'IA generativa" (20 ore: percorso base per funzionari ed esecutori + modulo governance per direttori e dirigenti). Per info sul corso contattatemi usando i social qui sotto.
+## 🔐 Sicurezza e limiti
 
-📮 Newsletter: gigicogo.substack.com
+- Tutta l’elaborazione avviene nel browser.
+- Tutti i dati mostrati sono inventati.
+- Le azioni sono simulate e non producono effetti reali.
+- Nessuna informazione della PA deve essere inserita nell’esercizio.
+- Il modello è volutamente semplice: le automazioni reali possono includere più condizioni, eccezioni, passaggi e controlli.
 
-📝 Blog: medium.com/webeconoscenza
+## 🛠️ Personalizzazione
 
-▶️ YouTube: youtube.com/@gigicogo
+Per aggiornare i contenuti:
 
-💼 LinkedIn: linkedin.com/in/gigicogo
+1. Apri `index.html` in un editor di testo.
+2. Individua l’oggetto JavaScript `scenarios`, alla fine del file.
+3. Modifica testi, domande, regole, messaggi e risultati.
+4. Per cambiare i colori principali, intervenire sulle variabili CSS nel blocco `:root`.
+
+Non è necessaria alcuna build, dipendenza, chiave API o configurazione aggiuntiva.
+
+## 🧪 Possibili evoluzioni
+
+- Aggiunta di nuovi scenari per la PA.
+- Visualizzazione di regole più complesse, con più condizioni o eccezioni.
+- Confronto esplicito tra automazione a regole e assistente AI.
+- Versione inglese dell’interfaccia.
+- Materiali per il docente e schede di lavoro per i partecipanti.
+- Integrazione con esempi di workflow reali, resi anonimi.
+
+## 🤝 Contribuire
+
+Sono benvenuti suggerimenti su nuovi scenari, miglioramenti didattici, correzioni e materiali di supporto.
+
+1. Apri una Issue per proporre un’idea o segnalare un problema.
+2. Oppure apri una Pull Request con una modifica o un nuovo scenario.
+3. Mantieni la struttura a quattro passaggi: evento, condizione, azione e arresto.
+
+---
+
+## 📄 Licenza
+
+Da definire: si suggerisce una licenza aperta (es. MIT o CC BY 4.0) per favorire il riuso da parte di altri formatori o altri enti. Sostituisci questo paragrafo con il testo della licenza scelta e il file `LICENSE` del repo.
+
+## 👤 Autore e contesto
+
+**Gianluigi Cogo**  
+Content creator e technical writer interessato ad AI generativa, automazioni, viaggi e strumenti digitali. Consulente e docente sui temi dell’IA generativa nella Pubblica Amministrazione.
+
+L’app nasce come esercitazione nel percorso operativo **“L’IA nella Pubblica Amministrazione — Percorso operativo per l’uso consapevole, sicuro e governato dell’IA generativa”** (20 ore: percorso base per funzionari ed esecutori + modulo governance per direttori e dirigenti). Per info sul corso contattami usando i social qui sotto.
+
+- 📮 **Newsletter:** [gigicogo.substack.com](https://gigicogo.substack.com)
+- 📝 **Blog:** [medium.com/webeconoscenza](https://medium.com/webeconoscenza)
+- ▶️ **YouTube:** [youtube.com/@gigicogo](https://youtube.com/@gigicogo)
+- 💼 **LinkedIn:** [linkedin.com/in/gigicogo](https://www.linkedin.com/in/gigicogo)
